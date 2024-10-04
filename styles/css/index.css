@@ -1,4 +1,58 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+footer {
+  background-color: #0b1d26;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+footer .footer-content {
+  display: flex;
+  gap: 300px;
+  justify-content: space-between;
+}
+footer .footer-content .footer-text1 {
+  color: #fff;
+  padding-top: 20px;
+}
+footer .footer-content .footer-text1 h3 {
+  font-family: "Roboto" sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 32px;
+  text-align: left;
+  margin-top: 18px;
+  margin-bottom: 128px;
+  width: 300px;
+}
+footer .footer-content .footer-text1 p {
+  opacity: 0.5;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 32px;
+  text-align: left;
+}
+footer .footer-content .footer-text2-3 {
+  display: flex;
+  gap: 50px;
+  color: #fff;
+}
+footer .footer-content .footer-text2-3 .text2-3 h2 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  text-align: left;
+  margin-top: 24px;
+  width: 300px;
+  color: #fbd784;
+  margin-bottom: 24px;
+}
+footer .footer-content .footer-text2-3 .text2-3 p {
+  font-family: "Laro", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 32px;
+  margin-bottom: 18px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -14,4 +68,18 @@ a {
 
 ul, ol {
   list-style: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: transparent;
+}
+
+.container {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding-left: 80px;
+  padding-right: 80px;
 }/*# sourceMappingURL=index.css.map */
