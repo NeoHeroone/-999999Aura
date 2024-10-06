@@ -4,6 +4,80 @@ header {
     background: linear-gradient(330.24deg, rgba(11, 29, 38, 0) 31.06%, #0B1D26 108.93%);
     height: 100vh;
 
+    .sidebar {
+        background: #0B1D26;
+        display: none;
+        position: relative;
+        z-index: 9999;
+
+        ul{
+            margin-left:auto;
+            padding:0;
+            display: flex;
+            list-style:none;
+            li{
+    
+                a{
+                    padding: 10px 20px;
+                    color: #fff;
+                    text-decoration: none;
+                    font-size: 20px;
+                    font-weight: bold;
+                    font-family: sans-serif;
+    
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+        input {
+            width: 40px;
+            aspect-ratio: 1;
+            display: none;
+            overflow: hidden;
+            margin:10px 20px 10px auto;
+            box-sizing: border-box;
+            
+            -webkit-appearance:none;
+            -moz-appearance:none;
+            appearance:none;
+            cursor:pointer;
+
+            &::before,
+            &::after{
+                content:"";
+                grid-area:1/1;
+                transition:.3s;
+            }
+
+            &::before{
+                background:
+                  radial-gradient(closest-side at 12.5% 25%,#fff 96%,#0000) 0 0/80% 40%,
+                  linear-gradient(#fff 50%,#0000 0) top/80% 40% repeat-y;
+            }
+
+            &::after{
+                padding: 10%;
+                background: 
+                  radial-gradient(closest-side at 50% 12.5%,#fff 96%,#0000) top /20% 80% repeat-y,
+                  radial-gradient(closest-side at 12.5% 50%,#fff 96%,#0000) left/80% 20% repeat-x,
+                  conic-gradient(from 90deg at 33% 33%, #0000 90deg, #fff 0)
+                   100% 100%/60% 60% padding-box content-box;
+                transform: translate(-100%) translateZ(0) rotate(45deg);
+                opacity:0;
+            }
+            &:checked::before {
+                transform: translate(100%);
+                opacity:0;
+            }
+            &:checked::after {
+                transform: translate(0) translateZ(0) rotate(45deg);
+                opacity:1;
+            }
+        }
+    }
+
     nav {
         .container {
             display: flex;

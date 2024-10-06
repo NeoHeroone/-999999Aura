@@ -1,138 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/css/minified/index.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/css/minified/index.min.css" />
     <title>Document</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <header>
-        <nav>
-            <div class="container">
-                <img src="./img/Logo.svg" alt="Icon Logo" class="logo">
-                <ul>
-                    <li>
-                        <a href="#">Equipment</a>
-                    </li>
-                    <li>
-                        <a href="#">About us</a>
-                    </li>
-                    <li>
-                        <a href="#">Blog</a>
-                    </li>
-                </ul>
-                <button>
-                    <img src="./img/icon-user.svg" alt="User">
-                    <span>Account</span>
-                </button>
-            </div>
-        </nav>
+      <div class="sidebar">
+        <input
+          type="checkbox"
+          role="button"
+          aria-label="Display the menu"
+          aria-expanded="false"
+          aria-controls="menu"
+        />
+        <ul id="menu">
+          <img src="./img/logo-footer.svg" alt="Logo" />
+          <li>
+            <a href="#home">Presets</a>
+          </li>
+          <li>
+            <a href="#service">Prints</a>
+          </li>
+          <li>
+            <a href="#store">Store</a>
+          </li>
+          <li>
+            <a href="#service">About</a>
+          </li>
+          <li>
+            <a href="#footer">Contact</a>
+          </li>
+        </ul>
+      </div>
 
-        <img src="./img/HG.png" alt="" class="first">
-        <img src="./img/MG.png" alt="" class="second">
-        <img src="./img/VG.png" alt="" class="thrid">
-
-        <div class="header-content">
-            <div class="container">
-                <div class="follow">
-                    <img src="./img/Social.svg" alt="Icon">
-                </div>
-                <div class="description">
-                    <img src="./img/what.svg" alt="img">
-                    <h1 class="header-title">Be prepared for the Mountains and beyond!</h1>
-                    <img src="./img/what2.svg" alt="img">
-                </div>
-                <div class="start">
-                    <img src="./img/Slider.png" alt="img">
-                </div>
-            </div>
+      <nav>
+        <div class="container">
+          <img src="./img/Logo.svg" alt="Icon Logo" class="logo" />
+          <ul>
+            <li>
+              <a href="#">Equipment</a>
+            </li>
+            <li>
+              <a href="#">About us</a>
+            </li>
+            <li>
+              <a href="#">Blog</a>
+            </li>
+          </ul>
+          <button>
+            <img src="./img/icon-user.svg" alt="User" />
+            <span>Account</span>
+          </button>
         </div>
+      </nav>
+
+      <img src="./img/HG.png" alt="" class="first" />
+      <img src="./img/MG.png" alt="" class="second" />
+      <img src="./img/VG.png" alt="" class="thrid" />
+
+      <div class="header-content">
+        <div class="container">
+          <div class="follow">
+            <img src="./img/Social.svg" alt="Icon" />
+          </div>
+          <div class="description">
+            <img src="./img/what.svg" alt="img" />
+            <h1 class="header-title">
+              Be prepared for the Mountains and beyond!
+            </h1>
+            <img src="./img/what2.svg" alt="img" />
+          </div>
+          <div class="start">
+            <img src="./img/Slider.png" alt="img" />
+          </div>
+        </div>
+      </div>
     </header>
 
     <main>
-        <section class="sect1">
-            <div class="container">
-                <div class="content-container content1">
-                    <div class="content-box">
-                        <div class="content-description">
-                            <img src="./img/Tagline1.png" alt="Icon">
-                            <h2>What level of  hiker are you?</h2>
-                            <p>Determining what level of hiker you are can be an important tool when planning future hikes. This hiking level guide will help you plan hikes according to different hike ratings set by various websites like All Trails and Modern Hiker. What type of hiker are you – novice, moderate, advanced moderate, expert, or expert backpacker? </p>
-                            <button>
-                                <span>read more</span>
-                                <img src="./img/arrow.png" alt="">
-                            </button>
-                        </div>
-                        <img src="./img/01.png" alt="Photo" class="content-img">
-                    </div>
-                    <span class="img01 img001">01</span>
-                </div>
-
-                <div class="content-container content2">
-                    <span class="img02 img001">02</span>
-                    <div class="content-box">
-                        <img src="./img/01.png" alt="Photo" class="content-img">
-                        <div class="content-description">
-                            <img src="./img/Tagline2.png" alt="Icon">
-                            <h2>Picking the right Hiking Gear!</h2>
-                            <p>The nice thing about beginning hiking is that you don’t really need any special gear, you can probably get away with things you already have.
-                                Let’s start with clothing. A typical mistake hiking beginners make is wearing jeans and regular clothes, which will get heavy and chafe wif they get sweaty or wet.</p>
-                            <button>
-                                <span>read more</span>
-                                <img src="./img/arrow.png" alt="">
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="content-container content3">
-                    <div class="content-box">
-                        <div class="content-description">
-                            <img src="./img/Tagline3.png" alt="Icon">
-                            <h2>Understand Your Map & Timing</h2>
-                            <p>To start, print out the hiking guide and map. If it’s raining, throw them in a Zip-Lock bag. Read over the guide, study the map, and have a good idea of what to expect. I like to know what my next landmark is as I hike. For example, I’ll read the guide and know that say, in a mile, I make a right turn at the junction..</p>
-                            <button>
-                                <span>read more</span>
-                                <img src="./img/arrow.png" alt="">
-                            </button>
-                        </div>
-                        <img src="./img/01.png" alt="Photo" class="content-img">
-                    </div>
-                    <span class="img03 img001">03</span>
-                </div>
+      <section class="sect1">
+        <div class="container">
+          <div class="content-container content1">
+            <div class="content-box">
+              <div class="content-description">
+                <img src="./img/Tagline1.png" alt="Icon" />
+                <h2>What level of hiker are you?</h2>
+                <p>
+                  Determining what level of hiker you are can be an important
+                  tool when planning future hikes. This hiking level guide will
+                  help you plan hikes according to different hike ratings set by
+                  various websites like All Trails and Modern Hiker. What type
+                  of hiker are you – novice, moderate, advanced moderate,
+                  expert, or expert backpacker?
+                </p>
+                <button>
+                  <span>read more</span>
+                  <img src="./img/arrow.png" alt="" />
+                </button>
+              </div>
+              <img src="./img/01.png" alt="Photo" class="content-img" />
             </div>
-        </section>
+            <span class="img01 img001">01</span>
+          </div>
+
+          <div class="content-container content2">
+            <span class="img02 img001">02</span>
+            <div class="content-box">
+              <img src="./img/01.png" alt="Photo" class="content-img" />
+              <div class="content-description">
+                <img src="./img/Tagline2.png" alt="Icon" />
+                <h2>Picking the right Hiking Gear!</h2>
+                <p>
+                  The nice thing about beginning hiking is that you don’t really
+                  need any special gear, you can probably get away with things
+                  you already have. Let’s start with clothing. A typical mistake
+                  hiking beginners make is wearing jeans and regular clothes,
+                  which will get heavy and chafe wif they get sweaty or wet.
+                </p>
+                <button>
+                  <span>read more</span>
+                  <img src="./img/arrow.png" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="content-container content3">
+            <div class="content-box">
+              <div class="content-description">
+                <img src="./img/Tagline3.png" alt="Icon" />
+                <h2>Understand Your Map & Timing</h2>
+                <p>
+                  To start, print out the hiking guide and map. If it’s raining,
+                  throw them in a Zip-Lock bag. Read over the guide, study the
+                  map, and have a good idea of what to expect. I like to know
+                  what my next landmark is as I hike. For example, I’ll read the
+                  guide and know that say, in a mile, I make a right turn at the
+                  junction..
+                </p>
+                <button>
+                  <span>read more</span>
+                  <img src="./img/arrow.png" alt="" />
+                </button>
+              </div>
+              <img src="./img/01.png" alt="Photo" class="content-img" />
+            </div>
+            <span class="img03 img001">03</span>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-text1">
-                    <img src="./img/logo-footer.svg" alt="footer-logo">
-                    <h3>Get out there & discover your next slope, mountain & destination!</h3>
-                    <p>Copyright 2019 MNTN, Inc. Terms & Privacy</p>
-                </div>
-                <div class="footer-text2-3">
-                    <div class="text2-3">
-                        <h2>More on The Blog</h2>
-                    <p>About MNTN</p>
-                    <p>Contributors & Writers</p>
-                    <p>Write For Us</p>
-                    <p>Contact Us</p>
-                    <p>Privacy Policy</p>
-                    </div>
-                    <div class="text2-3">
-                        <h2>More on MNTN</h2>
-                    <p>The Team</p>
-                    <p>Jobs</p>
-                    <p>Press</p>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-text1">
+            <img src="./img/logo-footer.svg" alt="footer-logo" />
+            <h3>
+              Get out there & discover your next slope, mountain & destination!
+            </h3>
+            <p>Copyright 2019 MNTN, Inc. Terms & Privacy</p>
+          </div>
+          <div class="footer-text2-3">
+            <div class="text2-3">
+              <h2>More on The Blog</h2>
+              <p>About MNTN</p>
+              <p>Contributors & Writers</p>
+              <p>Write For Us</p>
+              <p>Contact Us</p>
+              <p>Privacy Policy</p>
             </div>
+            <div class="text2-3">
+              <h2>More on MNTN</h2>
+              <p>The Team</p>
+              <p>Jobs</p>
+              <p>Press</p>
+            </div>
+          </div>
         </div>
+      </div>
     </footer>
-    
-</body>
+
+    <script>
+      document.querySelector("sidebar input").onclick = function () {
+        if (this.checked) this.setAttribute("aria-expanded", true);
+        else this.setAttribute("aria-expanded", false);
+      };
+    </script>
+  </body>
 </html>
