@@ -1,2 +1,70 @@
-@import "colors";
 @import "responsive";
+
+header {
+    background: linear-gradient(330.24deg, rgba(11, 29, 38, 0) 31.06%, #0B1D26 108.93%);
+    height: 100vh;
+
+    nav {
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 64px;
+            ul{
+                display: flex;
+                align-items: center;
+                gap: 40px;
+                justify-content: center;
+                li{
+                    a{
+                        color: #fff;
+                        font-family: 'Lato', sans-serif;
+                        font-size: 18px;
+                        font-weight: 700;
+                        line-height: 21.76px;
+                        &:hover{
+                            opacity: 70%;
+                        }
+                        &:active{
+                            opacity: 40%;
+                        }
+                    }
+                }
+            }
+            button{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 98px;
+                span{
+                    font-family: "Lato", sans-serif;
+                    font-size: 17px;
+                    font-weight: 700;
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    .first{
+        position: absolute;
+        z-index: -10;
+        width: 100%;
+        height: 400px;
+    }
+
+    .second{
+        position: absolute;
+        z-index: -10;
+        width: 100%;
+        height: 890px;
+    }
+
+    .thrid{
+        position: relative;
+        z-index: -1;
+        width: 100%;
+        height: 600px;
+        top: 345px;
+    }
+}

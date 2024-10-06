@@ -1,2 +1,27 @@
-@import "colors";
 @import "responsive";
+
+header {
+
+    .header-content {
+        margin-top: -400px;
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .description {
+                max-width: 950px;
+                margin-left: 200px;
+
+                h1{
+                    font-size: 58px;
+                    font-weight: 600;
+                    color: #fff;
+                    width: 650px;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+}
